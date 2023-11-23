@@ -1,0 +1,65 @@
+.banner {
+    display: flex;
+    height: 100vh;
+    justify-content: left;
+    align-items: flex-start;
+    background: url("../../assets/banner.png") 0% 100% no-repeat;
+    background-size: 100vw;
+    min-width: 1050px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    width: 350px;
+    height: 400px;
+    margin: 12%;
+    border-radius: 1rem;
+
+}
+
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 8rem;
+    font-weight: 900;
+
+}
+
+.font__effect {
+    color: transparent;
+    -webkit-text-stroke: 4px var(--primary);
+}
+
+.dominate {
+    position: relative;
+    animation: slideIn 1s;
+}
+
+
+.destroy {
+    position: relative;
+    animation: slideIn 1.3s;
+}
+
+.drive {
+    position: relative;
+    animation: slideIn 1.5s;
+}
+
+@keyframes slideIn {
+    from {
+        left: -700px;
+        opacity: 0
+    }
+
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}

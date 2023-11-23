@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 70px);
+    background: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.scroll__anchor {
+    position: absolute;
+    top: -70px;
+}
+
+.title {
+    margin-top: 50px;
+}
+
+.cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 550px 550px 550px;
+    justify-content: space-evenly;
+    width: 1800px;
+    font-size: 1rem;
+    font-weight: 600;
+}

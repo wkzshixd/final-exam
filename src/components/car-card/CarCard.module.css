@@ -1,0 +1,60 @@
+.image {
+    width: inherit;
+    border-radius: 2rem 2rem 0 0;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.container {
+    bottom: 0px;
+    position: relative;
+    background: white;
+    width: 550px;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 30px #595959;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    color: black;
+    transition: 0.2s;
+}
+
+.container:hover {
+    bottom: 10px;
+    transition: 0.2s;
+    box-shadow: -5px -5px 35px #c2c2c2;
+}
+
+.body {
+    min-height: 5rem;
+    margin: 0.5rem 5%;
+}
+
+.title {
+    margin: 0.5rem 5%;
+    height: 2rem;
+}
+
+.button {
+    position: absolute;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    bottom: 0;
+    width: 92%;
+    margin: 10px;
+    border: none;
+    border-radius: 2rem;
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    transition: 0.3s;
+
+}
+
+.button:hover {
+    cursor: pointer;
+    background: var(--primary);
+    color: black;
+}
