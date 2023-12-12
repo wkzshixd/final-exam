@@ -9,6 +9,7 @@
     color: #fff;
     justify-content: space-between;
     height: 100px;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     transition: 0.4s;
@@ -25,7 +26,7 @@
 
 .main__title {
     font-size: 2.5rem;
-    margin-left: 4%;
+    margin-left: 75px;
     display: flex;
     font-weight: 900;
     align-items: center;
@@ -54,4 +55,16 @@
     background-color: var(--primary);
     color: #000;
     cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    .main__title {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+    .navbar__button {
+        width: 120px;
+        font-size: 1rem;
+    }
 }

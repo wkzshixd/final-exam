@@ -7,20 +7,12 @@ const ContactFrom = () => {
         <div className={styles.container}>
             <div className={styles.scroll__anchor} id="contactForm"></div>
             <form className={styles.form}>
-                <label className={styles.label}>
-                    Name:
-                    <input className={styles.input} type="text" name="name"/>
-                </label>
-                <label className={styles.label}>
-                    Name:
-                    <input className={styles.input} type="text" name="name"/>
-                </label>
-                <label className={styles.label}>
-                    Name:
-                    <input className={styles.input} type="text" name="name"/>
-                </label>
+                <label className={styles.label}>Name:</label>
+                <input className={styles.input} type="text" name="name"/>
+                <label className={styles.label}>Email:</label>
+                <input className={styles.input} type="text" name="email"/>
                 <Link className={styles.button} to={"/cars"}>
-                    <span>Связаться</span>
+                    <submit>Связаться</submit>
                 </Link>
             </form>
         </div>

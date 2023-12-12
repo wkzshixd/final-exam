@@ -1,33 +1,34 @@
 .banner {
+    position: relative;
     display: flex;
+    width: 100%;
     height: 100vh;
-    justify-content: left;
-    align-items: flex-start;
-    background: url("../../assets/banner.png") 0% 100% no-repeat;
-    background-size: 100vw;
-    min-width: 1050px;
+    background-image: url("../../assets/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
 }
 
-.content {
+.content { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    top: 250px;
+    left: 5%;
     color: var(--primary);
-    width: 350px;
-    height: 400px;
-    margin: 12%;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
     border-radius: 1rem;
 
 }
 
-
 .title {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
-    font-size: 8rem;
+    font-size: 9rem;
     font-weight: 900;
-
 }
 
 .font__effect {
@@ -61,5 +62,33 @@
     to {
         left: 0;
         opacity: 1
+    }
+}
+
+@media (max-width: 1366px) {
+    .banner {
+        height: 80vh;
+    }
+    .content { 
+        top: 180px;
+    }
+    .title {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .banner {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }    
+    .content { 
+        top: 160px;
+    }
+    .title {
+        font-size: 6rem;
     }
 }
